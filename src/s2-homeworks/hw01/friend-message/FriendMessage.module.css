@@ -1,31 +1,100 @@
 .friendMessage {
-
+   position: relative;
+   margin: 50px 0 0 20px;
+   width: 480px;
+   min-height: 60px;
 }
 
 .friendImageAndText {
-
+   width: 480px;
 }
 
 .friendImageAndText img {
-
+   position: absolute;
+   width: 48px;
+   height: 48px;
+   left: 0;
+   bottom: 0;
 }
 
 .friendText {
+   position: relative;
+   padding-top: 3px;
+   padding-bottom: 8px;
+   padding: 3px 0;
+   width: 414px;
+   min-height: 60px;
+   left: 68px;
+   bottom: 0px;
+   border-radius: 10px;
+   background: #d0d9eb;
+}
 
+.friendText::before {
+   position: absolute;
+   bottom:-2px;
+   left: -52px;
+   content: '';
+   height: 50px;
+   width: 50px;
+   background: #ffffff;
+   border-radius: 0 0 35% 0;
+   border: 1px solid transparent;
+   z-index: -1;
 }
 
 .friendText:after {
-
+   position: absolute;
+   bottom: 0px;
+   content: '';
+   background: #d0d9eb;
+   width: 40px;
+   height: 60px;
+   border-radius: 10% 0 0 0;
+   transform: skew(-35deg);
+   z-index: -2;
 }
 
 .friendName {
+   width: 50%;
+   height: 20px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 19px;
+   /* identical to box height */
+   padding: 5px 0 0 20px;
 
+   color: #000000;
 }
 
 .friendMessageText {
+   width: 400px;
+   min-height: 20px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   /* identical to box height */
+   padding: 10px 0 0 20px;
 
+   color: #000000;
+   white-space: pre-wrap;
+   word-wrap: break-word;
 }
 
 .friendTime {
+   position: absolute;
+   width: 29px;
+   height: 12px;
+   margin: 5px 0 0 10px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 10px;
+   line-height: 12px;
 
+   color: #000000;
 }
