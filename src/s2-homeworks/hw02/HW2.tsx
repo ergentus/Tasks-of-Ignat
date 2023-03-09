@@ -59,12 +59,13 @@ function HW2() {
         <div id={'hw2'}>
             <div className={s2.hwTitle}>Homework #2</div>
             <div className={s2.hw}>
+                <div className={s2.h2main}>
                 <Affairs
                     data={filteredAffairs}
                     setFilter={setFilter}
                     deleteAffairCallback={deleteAffairCallback}
-                    filter={filter}
-                />
+                    filter={filter}/>
+                </div>
             </div>
         </div>
     )

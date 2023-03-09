@@ -6,8 +6,12 @@ import HW2 from '../s2-homeworks/hw02/HW2'
 function App() {
     return (
         <div className={s.App}>
-            {/* <HW1/> */}
-            <HW2/>
+            <div className={s.hw1block}>
+                <HW1 />
+            </div>
+            <div className={s.hw2block}>
+                <HW2 />
+            </div>
             {/*<HW3/>*/}
             {/*<HW4/>*/}
             {/*при выполнении дз 5 и более - закомментировать здесь дз 1-4, так как они есть внутри дз 5*/}
