@@ -24,8 +24,8 @@
    padding-bottom: 8px;
    width: 414px;
    min-height: 60px;
-   right: 0px;
-   bottom: 0px;
+   right: 0;
+   bottom: 0;
    border-radius: 10px;
    background: #0066CC;;
 }
@@ -45,7 +45,7 @@
 
 .text:after {
    position: absolute;
-   bottom: 0px;
+   bottom: 0;
    right: 0;
    content: '';
    background: #0066CC;;
@@ -59,7 +59,7 @@
 .name {
    width: 50%;
    height: 20px;
-   font-family: 'Montserrat';
+   font-family: 'Montserrat',sans-serif;
    font-style: normal;
    font-weight: 600;
    font-size: 16px;
@@ -73,7 +73,7 @@
 .messageText {
    width: 400px;
    min-height: 20px;
-   font-family: 'Montserrat';
+   font-family: 'Montserrat',sans-serif;
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
@@ -92,7 +92,7 @@
    width: 29px;
    height: 12px;
    margin: 5px 0 0 0;
-   font-family: 'Montserrat';
+   font-family: 'Montserrat',sans-serif;
    font-style: normal;
    font-weight: 600;
    font-size: 10px;

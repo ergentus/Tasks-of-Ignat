@@ -3,6 +3,7 @@
 .App {
     --header_height: 60px;
     width: 1200px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hwTitle {
@@ -11,7 +12,7 @@
     left: 70px;
     top: 131px;
     margin: 60px 0 10px 30px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -26,12 +27,7 @@
     margin-bottom: 60px;
 }
 
-.hw1block {}
-
-.hw2block {}
-
 .main {
     margin: 30px 0 50px 40px;
 }
 
-.hw3block {}

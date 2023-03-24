@@ -2,6 +2,11 @@
 }
 
 .input {
+	box-sizing: border-box;
+	height: 36px;
+	width: 372px;
+	border: 1px solid #D1D1D1;
+	border-radius: 5px;
 }
 
 .inputWrapper {
@@ -11,10 +16,20 @@
 }
 
 .errorInput {
+	border: 1px solid #CC1439;
 }
 
 .errorInput:focus {
 }
 
 .error {
+	position: relative;
+	right: 370px;
+	bottom: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0;
+	color: #CC1439;
 }
