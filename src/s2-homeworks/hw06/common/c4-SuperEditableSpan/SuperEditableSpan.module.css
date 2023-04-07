@@ -1,10 +1,15 @@
 .spanBlock {
+
 }
 
 .span {
+	color: #0080FF;
+	padding-left: 10px;
 }
 
 .input {
+	padding-left: 10px;
+	width: 300px;
 }
 
 .pen {
