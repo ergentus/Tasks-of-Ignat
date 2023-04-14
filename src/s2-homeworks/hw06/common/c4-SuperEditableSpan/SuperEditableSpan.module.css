@@ -3,6 +3,8 @@
 }
 
 .span {
+	display: inline-block;
+	height: 27px;
 	color: #0080FF;
 	padding-left: 10px;
 }
