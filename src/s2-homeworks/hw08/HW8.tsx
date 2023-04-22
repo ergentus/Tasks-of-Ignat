@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {homeWorkReducer} from './bll/homeWorkReducer'
+import {check18AC, homeWorkReducer, sortUpAndDownAC} from './bll/homeWorkReducer'
 import s from './HW8.module.css'
 import s2 from '../../s1-main/App.module.css'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
@@ -34,22 +34,16 @@ const HW8 = () => {
     const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>)
 
     const sortUp = () => {
-        setPeople(
-            homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'})
-        ) // в алфавитном порядке a.name > b.name
+        setPeople(homeWorkReducer(initialPeople, sortUpAndDownAC('up')))
         setCurrentSort('up')
     }
 
     const sortDown = () => {
-        setPeople(
-            homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'})
-        ) // в обратном порядке a.name < b.name}
+        setPeople(homeWorkReducer(initialPeople, sortUpAndDownAC('down')))
         setCurrentSort('down')
     }
     const check18 = () => {
-        setPeople(
-            homeWorkReducer(initialPeople, {type: 'check', payload: 18})
-        ) // совершеннолетние
+        setPeople(homeWorkReducer(initialPeople, check18AC()))
         setCurrentSort('18')
     }
 
