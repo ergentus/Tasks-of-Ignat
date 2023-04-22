@@ -21,7 +21,9 @@
 
 .secondary {
 	color: #0066CC;
-	border: 1px solid #0066CC;
+	/*border: 1px solid #0066CC;*/
+	border: none; /*! убрал сдвиг границ*/
+	outline: 1px solid #0066CC;
 }
 
 .default {

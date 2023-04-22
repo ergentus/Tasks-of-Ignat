@@ -36,7 +36,7 @@ const MessageSender = (props: any) => {
     }
 
     const onKeyDown = (e: any) => {
-        e.key === 'Enter' && e.shiftKey && addMessage()
+        e.key === 'Enter' && addMessage()
     }
 
     return (
