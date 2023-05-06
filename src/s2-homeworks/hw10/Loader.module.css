@@ -1,3 +1,14 @@
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
 .loader {
-    /*свг и/или анимация*/
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+	border-top-color: #66c2a5;
+	animation: spin 900ms linear infinite;
 }
