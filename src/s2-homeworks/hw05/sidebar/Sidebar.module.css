@@ -1,30 +1,35 @@
 .sidebar {
-	visibility: hidden;
 	position: fixed;
-
-}
-
-.sidebar.open {
-	visibility: visible;
-	z-index: 3;
-	position: fixed;
+	left: -320px;
 	width: 320px;
 	height: 100%;
 	background: #FFFFFF;
 	box-shadow: 0 10px 40px rgba(29, 33, 38, 0.13), 0 1px 2px rgba(29, 33, 38, 0.1);
+	pointer-events: none;
+	z-index: 3;
+	transition: left 0.1s ease-in-out;
+}
+
+.sidebar.open {
 	pointer-events: auto;
+	left: 0;
+	transition: left 0.3s ease-in-out;
 }
 
 .background {
 	z-index: 2;
 	position: fixed;
-
 	bottom: 0;
 	left: 0;
 	right: 0;
 	top: 0;
+	transition: all 0.3s ease-in-out;
+	animation: fade-in 0.3s ease-in-out forwards;
+}
 
-	background: rgba(0, 0, 0, 0.5);
+@keyframes fade-in {
+	from { background: rgba(0, 0, 0, 0); }
+	to { background: rgba(0, 0, 0, 0.5); }
 }
 
 .nav {
