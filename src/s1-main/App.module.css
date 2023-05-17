@@ -17,7 +17,6 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
-    color: #000000;
 }
 
 .hw {
@@ -27,7 +26,19 @@
     margin-bottom: 60px;
 }
 
-.main {
-    margin: 30px 50px 50px 40px;
+[data-theme='2'] .hw {
+    border-top: 1px solid #A4D1FF;
+    border-bottom: 1px solid #A4D1FF;
 }
 
+[data-theme='3'] .hw {
+    border-top: 1px solid #384655;
+    border-bottom: 1px solid #384655;
+}
+
+.main {
+    margin: 30px 50px 50px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}

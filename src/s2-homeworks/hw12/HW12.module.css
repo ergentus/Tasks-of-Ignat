@@ -1,3 +1,8 @@
+[data-theme='1'] .select,
+[data-theme='2'] .select {
+    border: 1px solid #000000;
+}
+
 [data-theme='1'] {
     --color: #000000;
     --background: #FFFFFF;
@@ -13,11 +18,28 @@
     --background: #212A34;
 }
 
+[data-theme='3'] .select {
+    color: #FFFFFF
+}
+
+[data-theme='3'] .select option {
+    color: #000000;
+}
+
 html {
     background-color: var(--background);
     color: var(--color);
 }
 
 .select {
-
+    box-sizing: border-box;
+    width: 171px;
+    height: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 2px;
+    background-color: transparent;
+    padding-left: 5px;
 }
+
