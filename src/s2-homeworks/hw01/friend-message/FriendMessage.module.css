@@ -81,3 +81,7 @@
 
    color: #000000;
 }
+
+[data-theme='3'] .friendTime {
+   color: #FFFFFF;
+}
